@@ -1,0 +1,82 @@
+/* ==========================================================================
+   بروستد ستيشن — TOKENS
+   Every colour below was sampled directly out of the brand's own artwork
+   (posters, packaging, storefront), not invented. Change these to rebrand.
+   ========================================================================== */
+
+:root{
+  /* --- Core palette, sampled from the real posters ------------------------ */
+  --red:        #E82028;   /* the poster red — 50-62% of every brand image   */
+  --red-deep:   #B0161D;   /* pressed / darker red                            */
+  --oxblood:    #8F0000;   /* deep maroon field + the hard type shadow        */
+  --oxblood-2:  #6B0000;
+  --gold:       #F8B000;   /* the display-type yellow + notification bell     */
+  --gold-lt:    #FFCB3D;
+  --ink:        #141414;   /* near-black used as a full brand colour          */
+  --ink-2:      #232020;
+  --white:      #FDFDFB;
+  --paper:      #F2EDE3;   /* newsprint                                       */
+  --paper-2:    #E4DCCC;
+
+  /* --- Text --------------------------------------------------------------- */
+  --fg:         #171310;
+  --fg-soft:    #574C44;
+  --fg-mute:    #8B7F73;
+  --on-dark:    #FBF7F1;
+  --on-dark-2:  #C9BCB0;
+
+  --rule:       rgba(20,20,20,.14);
+  --rule-dark:  rgba(251,247,241,.18);
+
+  /* --- Type ---------------------------------------------------------------
+     Lalezar  — heaviest poster-weight Arabic on Google Fonts; stands in for
+                the brand's cut-stencil display face. Always paired with the
+                hard offset shadow below, which is what actually sells it.
+     Anton    — ultra-condensed Latin, matches STAY TUNED / CRUNCH / WEDGES.
+     Caveat   — the casual marker script ("Enjoy!", "We Are").
+     Cairo    — the clean body face used across their posters.              */
+  --f-disp:   'Lalezar', 'Anton', system-ui, sans-serif;
+  --f-latin:  'Anton', 'Lalezar', system-ui, sans-serif;
+  --f-script: 'Caveat', cursive;
+  --f-body:   'Cairo', system-ui, 'Segoe UI', sans-serif;
+
+  /* v4: the whole type scale was pulled down a notch. At 100% zoom on a
+     laptop the old maxima read like a billboard rather than a page. The
+     shape of the scale is unchanged — only the ceilings and the vw slope. */
+  --t-xs:  clamp(.74rem, .71rem + .1vw, .8rem);
+  --t-sm:  clamp(.85rem, .83rem + .1vw, .9rem);
+  --t-md:  clamp(.96rem, .93rem + .16vw, 1.01rem);
+  --t-lg:  clamp(1.06rem, 1rem + .34vw, 1.26rem);
+  --t-xl:  clamp(1.45rem, 1.2rem + 1vw, 2rem);
+  --t-2xl: clamp(1.8rem, 1.35rem + 1.9vw, 2.75rem);
+  --t-3xl: clamp(2.3rem, 1.6rem + 3vw, 4.1rem);
+  --t-4xl: clamp(2.5rem, 1.6rem + 4.4vw, 5.4rem);
+
+  /* --- Space --------------------------------------------------------------- */
+  --s1:.25rem; --s2:.5rem;  --s3:.75rem; --s4:1rem;  --s5:1.5rem;
+  --s6:2rem;   --s7:3rem;   --s8:4rem;   --s9:6rem;  --s10:8rem;
+
+  /* Street poster = hard corners. Only the product cards get a soft radius,
+     because their own product cards do.                                      */
+  --r-0: 0px;
+  --r-1: 4px;
+  --r-card: 26px;
+  --r-pill: 999px;
+
+  --sh-1: 0 3px 0 rgba(20,20,20,.9);
+  --sh-2: 0 14px 34px rgba(20,20,20,.28);
+  --sh-3: 0 28px 64px rgba(20,20,20,.42);
+
+  --ease: cubic-bezier(.2,.9,.25,1);
+  --dur-1: 140ms;
+  --dur-2: 280ms;
+  --dur-3: 520ms;
+
+  --wrap: 1180px;
+  --pad: 1.25rem;
+  --hdr: 68px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  :root{ --dur-1:.01ms; --dur-2:.01ms; --dur-3:.01ms; }
+}
