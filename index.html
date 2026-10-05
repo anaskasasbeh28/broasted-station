@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>بروستد ستيشن | لكل ستيويشن — إربد</title>
+<meta name="description" content="بروستد ستيشن إربد — بروستد مقرمش، ناشفيل هوت تشيكن، ساندويشات وتاكو وكرانشي رول. توصيل عبر طلبات وأشيائي ومايسترو، أو تعال زورنا عند دوار القبة.">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:site_name" content="بروستد ستيشن">
+<meta property="og:title" content="بروستد ستيشن | لكل ستيويشن">
+<meta property="og:description" content="بروستد مقرمش وناشفيل هوت تشيكن في إربد. توصيل عبر طلبات وأشيائي ومايسترو.">
+<meta property="og:image" content="assets/img/hero-car.webp">
+<meta property="og:locale" content="ar_AR">
+<link rel="icon" href="assets/img/logo.png">
+<!-- Fonts are self-hosted in assets/fonts and declared in css/fonts.css.
+     Deliberately not <link rel=preload>: preloading a font needs crossorigin,
+     which throws CORS errors when the file is opened straight off disk. -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- icon sprite (inlined so the page works straight off the filesystem) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-bell" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a1.6 1.6 0 0 0-1.6 1.6v.6A6.6 6.6 0 0 0 5.5 10.6v3.5L3.8 16a1 1 0 0 0 .9 1.5h14.6a1 1 0 0 0 .9-1.5l-1.7-1.9v-3.5a6.6 6.6 0 0 0-4.9-6.4v-.6A1.6 1.6 0 0 0 12 2Zm0 20a2.6 2.6 0 0 0 2.5-2h-5A2.6 2.6 0 0 0 12 22Z"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24"><path fill="currentColor" d="M12.6 1.4c.6 3-1.7 4.6-3.2 6.4C7.7 9.9 6.6 12 6.6 14.2A5.5 5.5 0 0 0 12 19.8a5.3 5.3 0 0 0 5.5-5.3c0-1.6-.7-2.8-1.5-3.9-.2 1.6-1 2.5-1.9 3 .5-2.4-.5-4-1.7-5.5-1-1.3-1.6-2.8-.8-6.7Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21.5S5 15 5 9.9a7 7 0 1 1 14 0c0 5.1-7 11.6-7 11.6Z"/><circle cx="12" cy="9.8" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7.4V12l3.2 1.9"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 3.5H5.2A1.7 1.7 0 0 0 3.5 5.4c.4 6.9 6.2 12.7 13.1 13.1a1.7 1.7 0 0 0 1.9-1.7V15L14 13l-1.3 1.9a10.6 10.6 0 0 1-5.6-5.6L9 8 7 3.5Z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-13h-6l1-7Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.5 5 5 10-11"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="currentColor" d="M5.3 5.3h2.4v2.4H5.3zM16.3 5.3h2.4v2.4h-2.4zM5.3 16.3h2.4v2.4H5.3zM14 14h3v3h-3zM18 14h3v3h-3zM14 18h3v3h-3zM18 18h3v3h-3z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21.9v-8.2h2.7l.4-3.2h-3.1V8.5c0-.9.3-1.6 1.6-1.6h1.7V4a20 20 0 0 0-2.5-.1c-2.5 0-4.2 1.5-4.2 4.3v2.3H7.4v3.2h2.7v8.2h3.4Z"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M14.5 2.3h2.6c.2 1.7 1.3 3 3 3.4v2.6a6 6 0 0 1-3-.9v6.5a5.6 5.6 0 1 1-5.6-5.6l.7.1v2.7a3 3 0 1 0 2.3 2.9V2.3Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="m5 5 14 14M19 5 5 19"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></symbol>
+</svg>
+
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a href="#top" class="brand" aria-label="بروستد ستيشن — الرئيسية">
+      <img src="assets/img/logo.png" alt="" width="46" height="60">
+      <span><b>بروستد ستيشن</b><span>BROASTED STATION</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="#top" aria-current="page">الرئيسية</a>
+      <a href="menu.html">المنيو</a>
+      <a href="#nashville">ناشفيل هوت</a>
+      <a href="#wall">الأجواء</a>
+      <a href="#kids">ستيشن العيلة</a>
+      <a href="#branches">الفروع</a>
+      <a href="#feedback">آراء الزبائن</a>
+      <a href="#contact">تواصل</a>
+      <a href="menu.html" class="btn btn--red">شوف المنيو</a>
+    </nav>
+    <div class="hdr__cta">
+      <a href="menu.html" class="btn btn--sm btn--red">اطلب الآن</a>
+      <button class="burger" id="burger" aria-controls="nav" aria-expanded="false">
+        <svg class="m" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="x" aria-hidden="true"><use href="#i-x"/></svg>
+        <span class="vh">القائمة</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero grain" id="top">
+  <div class="hero__bg">
+    <img src="assets/img/hero-car.webp" alt="وجبة بروستد ستيشن مع الصوصات وكيس التيك أواي على كبوت سيارة حمراء" fetchpriority="high" width="1080" height="1016">
+  </div>
+  <div class="hero__wash" aria-hidden="true"></div>
+  <div class="sparks" aria-hidden="true">
+    <i style="left:8%;--d:0s;--x:30px"></i><i style="left:22%;--d:1.6s;--x:-24px"></i>
+    <i style="left:39%;--d:3.1s;--x:18px"></i><i style="left:57%;--d:.8s;--x:-34px"></i>
+    <i style="left:71%;--d:4.2s;--x:26px"></i><i style="left:86%;--d:2.4s;--x:-16px"></i>
+  </div>
+
+  <div class="wrap hero__in">
+    <span class="hero__kicker"><svg aria-hidden="true"><use href="#i-fire"/></svg> الطعم للعظم</span>
+
+    <h1 class="poster poster--gold">
+      الطعم اللي
+      <span class="l2 poster--white" style="text-shadow:.05em .05em 0 var(--oxblood)">بيفصلك عن كل اللي حواليك</span>
+    </h1>
+
+    <svg class="zig hero__scribble" viewBox="0 0 260 26" fill="none" aria-hidden="true">
+      <path d="M2 14 22 4l20 18 20-18 20 18 20-18 20 18 20-18 20 18 20-18 20 18 20-18 16 10"
+            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <p class="hero__sub">بروستد مقرمش من برا وطري من جوا، وناشفيل هوت تشيكن بحرارة حقيقية. كل قطعة بتتحضّر لحظة ما تطلبها.</p>
+
+    <div class="hero__acts">
+      <a href="menu.html" class="btn"><svg aria-hidden="true"><use href="#i-fire"/></svg> شوف المنيو كامل</a>
+      <a href="#delivery" class="btn btn--ghost"><svg aria-hidden="true"><use href="#i-bolt"/></svg> اطلب توصيل</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STATION TICKER ══════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track" id="ticker">
+    <div class="ticker__seg">
+      <span>الطعم للعظم</span><span class="en">NASHVILLE HOT CHICKEN</span>
+      <span>بروستد ستيشن لكل ستيويشن</span><span class="en">CRISPY MODE ON</span>
+      <span>الفرمشة عالفريك</span><span class="en">BROASTED STATION</span>
+    </div>
+    <div class="ticker__seg">
+      <span>الطعم للعظم</span><span class="en">NASHVILLE HOT CHICKEN</span>
+      <span>بروستد ستيشن لكل ستيويشن</span><span class="en">CRISPY MODE ON</span>
+      <span>الفرمشة عالفريك</span><span class="en">BROASTED STATION</span>
+    </div>
+    <div class="ticker__seg">
+      <span>الطعم للعظم</span><span class="en">NASHVILLE HOT CHICKEN</span>
+      <span>بروستد ستيشن لكل ستيويشن</span><span class="en">CRISPY MODE ON</span>
+      <span>الفرمشة عالفريك</span><span class="en">BROASTED STATION</span>
+    </div>
+</div>
+</div>
+
+<!-- ══════════════ STATION BOARD ══════════════ -->
+<section class="board" aria-label="معلومات سريعة">
+  <div class="wrap board__grid">
+    <div class="board__cell" data-rv>
+      <span class="board__ico"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
+      <div><span class="live" id="openState" data-state="open">مفتوح الآن</span><b>١٠ صباحًا — ٢ بعد منتصف الليل</b><small id="openNote">يوميًا</small></div>
+    </div>
+    <div class="board__cell" data-rv>
+      <span class="board__ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+      <div><b>دوار القبة · دوار الدرّة</b><small>فرعين في إربد</small></div>
+    </div>
+    <div class="board__cell" data-rv>
+      <span class="board__ico"><svg aria-hidden="true"><use href="#i-bolt"/></svg></span>
+      <div><b>توصيل سريع</b><small>طلبات · أشيائي · مايسترو</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ MENU ══════════════ -->
+<!-- ══════════════ DIGITAL MENU (teaser — the full menu lives in menu.html) ══ -->
+<section class="sec sec--red grain" id="menu" aria-labelledby="menu-h">
+  <div class="wrap">
+    <div class="mtitle" data-rv style="margin-bottom:var(--s6)">
+      <span class="wave-rule" aria-hidden="true"></span>
+      <h2 class="mtitle__tag" id="menu-h">منيو ستيشن</h2>
+      <span class="wave-rule" aria-hidden="true"></span>
+    </div>
+    <div class="qr">
+      <div data-rv>
+        <span class="head__eye">المنيو</span>
+        <p class="qr__lead poster poster--white" style="text-shadow:.05em .05em 0 var(--oxblood)">امسح الكود من على الطاولة</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> بيفتح على طول — بدون تطبيق ولا تسجيل</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> مظبوط للتلفون والتابلت اللي على الطاولة</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> صور وأسعار واضحة لكل صنف قبل ما تطلب</li>
+        </ul>
+        <div class="qr__acts"><a href="menu.html" class="btn"><svg aria-hidden="true"><use href="#i-qr"/></svg> افتح المنيو</a></div>
+      </div>
+      <a class="qr__card" href="menu.html" data-rv>
+        <img src="assets/img/qr.svg" alt="رمز QR بيفتح المنيو لبروستد ستيشن" width="240" height="240" loading="lazy">
+        <b>امسحني</b>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NEWSPAPER ══════════════ -->
+<section class="sec sec--paper" aria-labelledby="news-h">
+  <div class="wrap">
+    <article class="news" data-rv>
+      <span class="postmark news__stamp">بروستد<br>ستيشن</span>
+      <div class="news__mast">
+        <span>جريدة المحطة — العدد ٠١</span>
+        <b>بروستد ستيشن</b>
+        <span class="latin">IRBID · JORDAN</span>
+      </div>
+
+      <span class="news__flag">خبر عاجل</span>
+      <h2 id="news-h" class="news__head poster poster--ink poster--flat">موسم سبايسي ستيشن ناشفيل وصل إربد رسميًا</h2>
+
+      <div class="news__body">
+        <figure class="news__fig">
+          <img src="assets/img/newspaper.webp" alt="ناشفيل هوت تشيكن من بروستد ستيشن" loading="lazy" width="1100" height="673">
+          <figcaption>ناشفيل هوت تشيكن — بيتتبّل وهو ساخن عشان يتشرّب التوابل.</figcaption>
+        </figure>
+        <p>بدأت الحكاية بفكرة وحدة: دجاج بيتحضّر لحظة ما تطلبه، ما ينتظر تحت لمبة تسخين. من يوم ما فتحنا أبوابنا عند دوار القبة في إربد، وهاي القاعدة ما تغيّرت ولا مرة.</p>
+        <p>الوصفة نفسها أخذت وقت. التتبيلة، درجة حرارة الزيت، وقت الراحة قبل ما توصل لعلبتك — كلها تفاصيل جرّبناها عشرات المرات لحتى وصلنا للقرمشة اللي بتسمعها قبل ما تدوقها.</p>
+        <p>وبعدين إجا الناشفيل. حرارة حقيقية مش مصطنعة، بتتبّل وهي ساخنة عشان تتشرّب التوابل. صار عنا موسم كامل حواليها، ومعها صوصاتنا الخاصة اللي ما بتلاقيها غير عنا.</p>
+        <p>اليوم عنا فرعين في إربد، صالة واسعة، منطقة لعب مجانية للأطفال، وتوصيل على طلبات وأشيائي ومايسترو. والباقي نفس الشي: كل طلب بيتحضّر لما تطلبه، مش قبل.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════════ NASHVILLE ══════════════ -->
+<section class="sec fire grain" id="nashville" aria-labelledby="fire-h">
+  <div class="sparks" aria-hidden="true">
+    <i style="left:12%;--d:.4s;--x:26px"></i><i style="left:31%;--d:2.2s;--x:-20px"></i>
+    <i style="left:52%;--d:3.7s;--x:22px"></i><i style="left:74%;--d:1.3s;--x:-28px"></i>
+    <i style="left:91%;--d:4.8s;--x:14px"></i>
+  </div>
+  <div class="wrap fire__grid">
+    <div data-rv>
+      <span class="head__eye">التوقيع</span>
+      <p class="fire__eyebrow latin">NASHVILLE<br>HOT CHICKEN</p>
+      <h2 id="fire-h" class="poster poster--gold">حرارة حقيقية، مش مكياج</h2>
+      <p>التتبيلة بتنحط والدجاج لسا ساخن، عشان تتشرّب التوابل بدل ما تقعد فوق. النتيجة: نار بتوصل بالتدريج، وطعم بيضل بعد آخر قضمة.</p>
+      <div class="fire__heat">
+        <i><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-fire"/></svg></i>
+        <i><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-fire"/></svg></i>
+        <i><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-fire"/></svg></i>
+        <b>مستوى الحرارة — ناشفيل</b>
+      </div>
+      <div class="fire__acts">
+        <a href="menu.html" class="btn">جرّب الناشفيل</a>
+        <a href="#delivery" class="btn btn--ghost">اطلب توصيل</a>
+      </div>
+    </div>
+    <figure class="fire__shot" data-rv>
+      <img src="assets/img/nashville.webp" alt="ساندويش بروستد ستيشن المقرمش" loading="lazy" width="1100" height="1115">
+      <span class="postmark">CRISPY<br>MODE ON</span>
+    </figure>
+  </div>
+</section>
+
+<!-- ══════════════ POSTER WALL ══════════════ -->
+<section class="sec" id="wall" aria-labelledby="wall-h">
+  <div class="wrap">
+    <div class="head" data-rv>
+      <span class="head__eye">الأجواء</span>
+      <h2 id="wall-h" class="poster poster--ink">من داخل المحطة</h2>
+      <p>الصالة، الماسكوت، الفريق، والأوردرات وهي طالعة — كل شي عنا من صفحتنا مباشرة.</p>
+    </div>
+    <div class="wall" data-rv>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/storefront.webp" alt="واجهة بروستد ستيشن في إربد" loading="lazy" width="1200" height="1792"><figcaption>الواجهة — دوار القبة</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/poster-eat.webp" alt="زبون بياكل بروستد ستيشن" loading="lazy" width="1000" height="1250"><figcaption>الطعم بيفصلك</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/packaging.webp" alt="علب بروستد ستيشن على كرسي أحمر" loading="lazy" width="1152" height="1354"><figcaption>التغليف</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/mascot-cola.webp" alt="ماسكوت بروستد ستيشن مع كنزا كولا" loading="lazy" width="1080" height="1216"><figcaption>الماسكوت</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/poster-grad.webp" alt="ماسكوت بروستد ستيشن بقبعة التخرّج" loading="lazy" width="1000" height="1251"><figcaption>موسم التخرّج</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/delivery.webp" alt="تسليم طلب بروستد ستيشن" loading="lazy" width="1152" height="1008"><figcaption>ستيشن الأبطال</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/summer.webp" alt="ماسكوت بروستد ستيشن على حافة المسبح" loading="lazy" width="1100" height="1182"><figcaption>صيف ٢٠٢٦</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/w-roll.webp" alt="كرنشي رول مقطوع بالنص" loading="lazy" width="900" height="1125"><figcaption>كرنشي رول</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/w-fresh.webp" alt="حملة: إذا مش فريش نرجع" loading="lazy" width="900" height="1126"><figcaption>إذا مش فريش نرجع</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/w-king.webp" alt="حملة: البروستد ملك" loading="lazy" width="900" height="1126"><figcaption>كله النا</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/w-space.webp" alt="حملة: طعم من كوكب ثاني" loading="lazy" width="900" height="1126"><figcaption>من كوكب ثاني</figcaption></figure>
+      <figure class="poster-card"><span class="tape" aria-hidden="true"></span><img src="assets/img/w-mirror.webp" alt="حملة: مش راح تشوف غيرها" loading="lazy" width="900" height="1126"><figcaption>مش راح تشوف غيرها</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ KIDS ZONE ══════════════ -->
+<section class="sec sec--white" id="kids" aria-labelledby="kids-h">
+  <div class="wrap">
+    <div class="head" data-rv>
+      <span class="head__eye">ستيشن العيلة</span>
+      <h2 id="kids-h" class="poster poster--ink">منطقة لعب، وما بدها حجز</h2>
+      <p>الأهل بياكلوا على راحتهم والولاد بيلعبوا قدامهم. منطقة اللعب مجانية، وما بدها حجز مسبق.</p>
+    </div>
+    <div class="kids" data-rv>
+      <figure class="kids__big">
+        <img src="assets/img/kids-play.webp" alt="منطقة لعب الأطفال داخل بروستد ستيشن" loading="lazy" width="1000" height="796">
+        <figcaption>منطقة اللعب</figcaption>
+      </figure>
+      <figure class="kids__sm">
+        <img src="assets/img/kids-hall.webp" alt="صالة بروستد ستيشن من الداخل" loading="lazy" width="1000" height="978">
+        <figcaption>الصالة</figcaption>
+      </figure>
+      <figure class="kids__sm">
+        <img src="assets/img/kids-neon.webp" alt="جدار النيون في بروستد ستيشن" loading="lazy" width="1000" height="1251">
+        <figcaption>جدار النيون</figcaption>
+      </figure>
+    </div>
+    <ul class="kids__facts" data-rv>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg> اللعب مجاني</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg> بدون حجز مسبق</li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg> صالة واسعة للعائلات</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════ DELIVERY ══════════════ -->
+<section class="sec sec--ink grain" id="delivery" aria-labelledby="del-h">
+  <div class="wrap deliv">
+    <div data-rv>
+      <span class="head__eye">التوصيل</span>
+      <h2 id="del-h" class="poster poster--white" style="text-shadow:.05em .05em 0 var(--red)">بوصلك ولسا كرنشي</h2>
+      <p style="margin-top:var(--s4);color:var(--on-dark-2);font-weight:600;max-width:44ch">
+        متواجدين على ثلاث تطبيقات توصيل. اطلب من أي واحد فيهم، أو اتصل فينا مباشرة وخلّص.
+      </p>
+      <div class="apps">
+        <span class="app"><em>talabat</em><small>طلبات</small></span>
+        <span class="app"><em>mythings</em><small>أشيائي</small></span>
+        <span class="app"><em>maestro</em><small>مايسترو</small></span>
+      </div>
+      <div class="fire__acts">
+        <a href="tel:+962792228299" class="btn"><svg aria-hidden="true"><use href="#i-phone"/></svg> <bdi class="tel">٠٧٩٢ ٢٢٨ ٢٩٩</bdi></a>
+      </div>
+    </div>
+    <figure class="deliv__shot" data-rv>
+      <img src="assets/img/rider.webp" alt="مندوب توصيل بروستد ستيشن" loading="lazy" width="1080" height="946">
+    </figure>
+  </div>
+</section>
+
+<!-- ══════════════ BRANCHES ══════════════ -->
+<section class="sec sec--paper" id="branches" aria-labelledby="br-h">
+  <div class="wrap">
+    <div class="head" data-rv>
+      <span class="head__eye">الفروع</span>
+      <h2 id="br-h" class="poster poster--ink">تعال عالمحطة</h2>
+    </div>
+    <div class="stamps" data-rv>
+
+      <article class="branch">
+        <div class="branch__inner stamp">
+          <div class="branch__pic">
+            <img src="assets/img/storefront.webp" alt="فرع بروستد ستيشن عند دوار القبة" loading="lazy" width="1152" height="1152">
+            <span class="branch__val">الفرع الرئيسي</span>
+          </div>
+          <h3>دوار القبة — إربد</h3>
+          <p class="branch__row"><svg aria-hidden="true"><use href="#i-pin"/></svg> شارع الملك عبدالله بن الحسين، باتجاه إشارة المحافظة، إربد ٢١١١٠</p>
+          <p class="branch__row"><svg aria-hidden="true"><use href="#i-clock"/></svg> يوميًا ١٠:٠٠ صباحًا — ٢:٠٠ بعد منتصف الليل</p>
+          <p class="branch__row"><svg aria-hidden="true"><use href="#i-phone"/></svg> <bdi class="tel">٠٧٩٢ ٢٢٨ ٢٩٩</bdi></p>
+          <div class="branch__acts">
+            <a class="btn btn--sm btn--red" href="https://maps.google.com/?q=Broasted+Station+Irbid" target="_blank" rel="noopener">الاتجاهات</a>
+            <a class="btn btn--sm btn--white" href="tel:+962792228299">اتصل</a>
+          </div>
+        </div>
+        <span class="postmark">إربد</span>
+      </article>
+
+      <article class="branch">
+        <div class="branch__inner stamp">
+          <div class="branch__pic">
+            <img src="assets/img/branch2.webp" alt="صالة بروستد ستيشن من الداخل" loading="lazy" width="1077" height="972">
+            <span class="branch__val">فرع ثاني</span>
+          </div>
+          <h3>دوار الدرّة — إربد</h3>
+          <p class="branch__row"><svg aria-hidden="true"><use href="#i-pin"/></svg> دوار الدرّة، إربد</p>
+          <p class="branch__row"><svg aria-hidden="true"><use href="#i-clock"/></svg> يوميًا ١٠:٠٠ صباحًا — ٢:٠٠ بعد منتصف الليل</p>
+          <p class="branch__row"><svg aria-hidden="true"><use href="#i-phone"/></svg> <bdi class="tel">٠٧٩٢ ٢٢٨ ٢٩٩</bdi></p>
+          <div class="branch__acts">
+            <a class="btn btn--sm btn--red" href="https://maps.google.com/?q=Broasted+Station+Durra+Circle+Irbid" target="_blank" rel="noopener">الاتجاهات</a>
+            <a class="btn btn--sm btn--white" href="tel:+962792228299">اتصل</a>
+          </div>
+        </div>
+        <span class="postmark">إربد</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FEEDBACK ══════════════ -->
+<section class="sec sec--ink grain" id="feedback" aria-labelledby="fb-h">
+  <div class="wrap">
+    <div class="head" data-rv>
+      <span class="head__eye">آراء الزبائن</span>
+      <h2 id="fb-h" class="poster poster--white" style="text-shadow:.05em .05em 0 var(--red)">شو بيحكوا الناس</h2>
+      <p>تقييمات حقيقية من تطبيقات التوصيل، مصوّرة زي ما هي. ما بنكتب كلام ونحطه على لسان زبون.</p>
+    </div>
+    <div class="fb" data-rv>
+      <figure class="fb__card"><img src="assets/img/fb-1.webp" alt="تقييم زبون حقيقي لبروستد ستيشن" loading="lazy" width="1100" height="530"></figure>
+      <figure class="fb__card"><img src="assets/img/fb-2.webp" alt="تقييم زبون حقيقي لبروستد ستيشن" loading="lazy" width="1100" height="530"></figure>
+      <figure class="fb__card"><img src="assets/img/fb-3.webp" alt="تقييم زبون حقيقي لبروستد ستيشن" loading="lazy" width="1100" height="530"></figure>
+      <figure class="fb__card"><img src="assets/img/fb-4.webp" alt="تقييم زبون حقيقي لبروستد ستيشن" loading="lazy" width="1100" height="530"></figure>
+    </div>
+    <p class="fb__note" data-rv>تقييمات حقيقية من زباين المحل، منشورة على صفحتهم زي ما هي.</p>
+  </div>
+</section>
+
+<!-- ══════════════ CLOSER ══════════════ -->
+<section class="sec closer grain" id="contact" aria-labelledby="cl-h">
+  <div class="sparks" aria-hidden="true">
+    <i style="left:16%;--d:.2s;--x:22px"></i><i style="left:44%;--d:2.6s;--x:-18px"></i>
+    <i style="left:68%;--d:1.4s;--x:26px"></i><i style="left:88%;--d:3.9s;--x:-22px"></i>
+  </div>
+  <div class="wrap closer__in">
+    <h2 id="cl-h" class="poster poster--gold">الطعم للعظم</h2>
+    <p>فرعين بإربد — دوار القبة ودوار الدرّة. تعال خذ طلبك طازج، أو اطلب توصيل ونحنا بنوصلك.</p>
+    <div class="closer__acts">
+      <a href="tel:+962792228299" class="btn btn--ink"><svg aria-hidden="true"><use href="#i-phone"/></svg> اتصل الآن</a>
+      <a href="https://www.instagram.com/broastedstation.jor" target="_blank" rel="noopener" class="btn"><svg aria-hidden="true"><use href="#i-ig"/></svg> تابعنا</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="ft">
+  <div class="wrap ft__grid">
+    <div>
+      <a href="#top" class="brand" aria-label="بروستد ستيشن — الرئيسية">
+        <img src="assets/img/logo.png" alt="" width="46" height="60">
+        <span><b>بروستد ستيشن</b><span>BROASTED STATION</span></span>
+      </a>
+      <p class="ft__about">بروستد مقرمش وناشفيل هوت تشيكن في إربد. الطعم للعظم من ٢٠ تشرين الأول ٢٠٢٤.</p>
+      <div class="social">
+        <a href="https://www.instagram.com/broastedstation.jor" target="_blank" rel="noopener" aria-label="إنستغرام"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+        <a href="https://www.facebook.com/broastedstation.jor" target="_blank" rel="noopener" aria-label="فيسبوك"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+        <a href="#" aria-label="تيك توك"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
+      </div>
+    </div>
+    <nav aria-label="روابط">
+      <h3>الصفحة</h3>
+      <ul>
+        <li><a href="#top">الرئيسية</a></li>
+        <li><a href="menu.html">المنيو</a></li>
+        <li><a href="#nashville">ناشفيل هوت</a></li>
+        <li><a href="#wall">الأجواء</a></li>
+        <li><a href="#kids">ستيشن العيلة</a></li>
+        <li><a href="#branches">الفروع</a></li>
+        <li><a href="#feedback">آراء الزبائن</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3>تواصل</h3>
+      <ul>
+        <li><svg aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+962792228299"><bdi class="tel">٠٧٩٢ ٢٢٨ ٢٩٩</bdi></a></li>
+        <li><svg aria-hidden="true"><use href="#i-ig"/></svg><a href="https://www.instagram.com/broastedstation.jor" target="_blank" rel="noopener">broastedstation.jor</a></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><address>شارع الملك عبدالله بن الحسين، إربد ٢١١١٠</address></li>
+      </ul>
+    </div>
+    <div>
+      <h3>المحطة فاتحة</h3>
+      <ul>
+        <li><svg aria-hidden="true"><use href="#i-clock"/></svg><address>يوميًا ١٠:٠٠ ص — ٢:٠٠ بعد منتصف الليل</address></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>فرعين: دوار القبة · دوار الدرّة</span></li>
+        <li><svg aria-hidden="true"><use href="#i-bolt"/></svg><span>توصيل: طلبات · أشيائي · مايسترو</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap ft__end">
+    <span>© <span id="yr">2026</span> بروستد ستيشن — جميع الحقوق محفوظة.</span>
+    <a href="#top">الرجوع للأعلى ↑</a>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <a href="tel:+962792228299" class="btn btn--sm btn--ghost"><svg aria-hidden="true"><use href="#i-phone"/></svg> اتصل</a>
+  <a href="menu.html" class="btn btn--sm"><svg aria-hidden="true"><use href="#i-fire"/></svg> المنيو</a>
+</div>
+
+<script src="js/hours.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>
